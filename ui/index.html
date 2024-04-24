@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliss</title>
+    <!-- Link to style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .hearBox {
+            max-width: 1068px;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        .textlogo {
+            width: 15%;
+            float: left;
+            padding: 10px 0;
+        }
+
+        .nav {
+            float: left;
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Nav -->
+        <div class="hearBox">
+            <div class="textlogo">
+                <a href="./index.html" class="logo">
+                    <span class="textspan">b</span>
+                    <span class="textspan">l</span>
+                    <span class="textspan">i</span>
+                    <span class="textspan">s</span>
+                    <span class="textspan">s</span>
+                </a>
+            </div>
+            <div class="nav">
+
+                <!-- Menu icon -->
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <!-- navbar -->
+                <ul class="navbar">
+                    <li><a href="#home" class="home-active">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#customers">Customers</a></li>
+                </ul>
+                <div class="user-cart">
+                    <!-- User -->
+                    <a href="./DangKy.html"><i class='bx bx-user' id="user-icon"></i></a>
+                    <!-- Cart icon -->
+                    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                    <!-- Cart -->
+                    <div class="cart">
+                        <h2 class="Cart-Title">Your Cart</h2>
+                        <!-- Content -->
+                        <div class="cart-content">
+
+                        </div>
+                        <!-- Total -->
+                        <div class="total">
+                            <div class="total-title">Total:</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <!-- Buy button -->
+                        <button type="button" class="btn-buy"> Buy Now</button>
+                        <!-- cart Close -->
+                        <i class='bx bx-x' id="cart-close"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide show -->
+    <section class="home" id="home">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <h1>Bright Idea</h1>
+                    <span>Powered by clinical grade vitamin C, this bestselling <br>
+                        trio boosts brightness & reduces the look of dark spots and <br>
+                        for visibly glowing results.</span>
+                    <br>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="../Images/banner6.jpg" alt="">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <h1>Block Star</h1>
+                    <span>This 100% mineral daily sunscreen blends like a dream <br>
+                        and delivers broad spectrum protection, plus a smooth, <br>
+                        never-greasy finish.</span>
+                    <br>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="../Images/banner8.jpg" alt="">
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <h1>30% Off Bliss OG Faves</h1>
+                    <span>Take 30% Off Bliss Originals <br> with code: BLISSLOVE at checkout</span>
+                    <br>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="../Images/banner7.jpg" alt="">
+            </div>
+            <div class="arrow left" onclick="pre()"><i class='bx bx-left-arrow-alt'></i></div>
+            <div class="arrow right" onclick="Next()"><i class='bx bx-right-arrow-alt'></i></div>
+        </div>
+        <div style="text-align:center; z-index:1000;" class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="categories-box">
+            <div class="heading">
+                <h1>Our Polular<br> <span>Categories</span></h1>
+                <a href="#" class="btn">See All<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <!-- Container-content -->
+            <div class="categories-container">
+                <!-- box 1 -->
+                <div class="box box1">
+                    <img src="../Images/sp-hot1.jpg" alt="" class="product-img">
+                    <h2>That's Incredi-peel Glycolic Acid Pads</h2>
+                    <span class="products-title">Spa-strength Glycolic Resurfacing Pads</span>
+                    <button class="add">ADD TO BAG $25.5<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <a href="./ProductsDetail.html"><i class='bx bx-search-alt-2 add-cart'></i></a>
+                    </div>
+                    <span class="">HOT</span>
+                </div>
+                <!-- box 2 -->
+                <div class="box box2">
+                    <img src="../Images/sp-hot2.jpg" alt="" class="product-img">
+                    <h2>Bright Idea Serum</h2>
+                    <span class="products-title">Vitamin C + Tri-Peptide Collagen</span>
+                    <button class="add">ADD TO BAG $28<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                    <span class="textsp">HOT</span>
+                </div>
+                <!-- box 3 -->
+                <div class="box box3">
+                    <img src="../Images/sp-hot3.jpg" alt="" class="product-img">
+                    <h2>Youth Got This Moisturizer</h2>
+                    <span class="products-title">Prevent-4™ Pure Retinol Moisturizing Cream</span>
+                    <button class="add">ADD TO BAG $22<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="box box4">
+                    <img src="../Images/sp-hot4.jpg" alt="" class="product-img">
+                    <h2>BlissPro Liquid Exfoliant</h2>
+                    <span class="products-title">PHA LIQUID EXFOLIANT</span>
+                    <button class="add">ADD TO BAG $24<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                    <span class="textsp">HOT</span>
+                </div>
+                <!-- box 5 -->
+                <div class="box box5">
+                    <img src="../Images/sp-hot5.jpg" alt="" class="product-img">
+                    <h2>Rest Assured Eye Cream</h2>
+                    <span class="products-title">Dark Circle Reducing & Depuffing Eye Cream</span>
+                    <button class="add">ADD TO BAG $25<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                    <span class="textsp">HOT</span>
+                </div>
+                <!-- box 6 -->
+                <div class="box box6">
+                    <img src="../Images/sp-hot6.jpg" alt="" class="product-img">
+                    <h2>Mighty Biome Pre/Post Biotics + Barrier Aid™ Moisturizer</h2>
+                    <span class="products-title">Ultra-Hydrating Moisturizer Concentrate</span>
+                    <button class="add">ADD TO BAG $25<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                </div>
+                <!-- box 7 -->
+                <div class="box box7">
+                    <img src="../Images/sp-hot7.jpg" alt="" class="product-img">
+                    <h2>Block Star Sheer</h2>
+                    <span class="products-title">Liquid Daily Mineral SPF 50</span>
+                    <button class="add">ADD TO BAG $29<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                    <span class="textsp">HOT</span>
+                </div>
+                <!-- box 8 -->
+                <div class="box box8">
+                    <img src="../Images/sp-hot8.jpg" alt="" class="product-img">
+                    <h2>Blackhead Breakdown</h2>
+                    <span class="products-title">Blackhead Purifying Stick</span>
+                    <button class="add">ADD TO BAG $32<i class='bx bx-right-arrow-alt'></i></button>
+                    <div class="product-infor">
+                        <i class='bx bx-search-alt-2 add-cart'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="products-box">
+            <div class="heading">
+                <h1>Browse Our Hottest<br> <span>Products</span></h1>
+                <a href="#" class="btn">See All<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="products-container">
+                <!-- Box 1 -->
+                <div class="box">
+                    <img src="../Images/banner7.jpg" alt="">
+                    <div class="text">
+                        <h2>The Scent That Started It All</h2>
+                        <span>A cult-fave fragrance for more than two decades!</span>
+                    </div>
+                    <a href="" class="add">SHOP LEMON & SAGE</a>
+                </div>
+                <!-- Box 2 -->
+                <div class="box">
+                    <img src="../Images/spPhobien1" alt="">
+                    <div class="text">
+                        <h2>Pore Perfection</h2>
+                        <span>3x THE BENEFITS - LET’S BREAK IT DOWN!</span>
+                    </div>
+                    <a href="" class="add">SHOP BLACKHEAD BREAKDOWN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Clean, Cruelty-Free, <br> Dermatologist-Tested</h2>
+                <span>We are a clean, cruelty-free, planet-friendly skincare brand that delivers transformative,
+                    dermatologist-tested products for total skin happiness.</span>
+                <a href="" class="add add1">LEARN MORE</a>
+                <a href="" class="add add2">SHOP BLISS</a>
+            </div>
+            <img src="../Images/about" alt="">
+        </div>
+    </section>
+
+    <!-- Customers -->
+    <section class="customer" id="customers">
+        <div class="customers-box">
+            <h2>Why Customer's Love Us</h2>
+            <div class="customers-container">
+                <!-- Review 1 -->
+                <div class="box">
+                    <i class='bx bxs-quote-alt-left'></i>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Did someone say TEXTURE GOALS? this moisturizer from bliss is the perfect product to combat your
+                        developing wrinkles and deeply hydrate the skin! Thank you so much to BLISS for allowing me to
+                        try out their PREVET-4 and PURE RETINOL DEEP HYDRATION MOISTURIZER! </p>
+                    <div class="review-profile">
+                        <img src="../Images/customer1" alt="">
+                        <h3>Michele Smith</h3>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="box">
+                    <i class='bx bxs-quote-alt-left'></i>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>It’s the glow for me. Swipe for an unfiltered photo. 🌟🧡 I live for bliss Bright Idea Vitamin C
+                        + Tri-Peptide! It’s light, makes my skin glow and it smells SO GOOD! 🍊Seriously. Like a sweet
+                        orange. Oh! And it gives me a little boost in the morning.</p>
+                    <div class="review-profile">
+                        <img src="../Images/customer2" alt="">
+                        <h3>Michele Smith</h3>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="box">
+                    <i class='bx bxs-quote-alt-left'></i>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>morning monday 💛 lets make things happen!!!</p>
+                    <div class="review-profile">
+                        <img src="../Images/customer3" alt="">
+                        <h3>Michele Smith</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-container">
+            <!-- box 1 -->
+            <div class="footer-box">
+                <img src="../Images/logo1.jpg" alt="">
+                <div class="social">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="footer-box">
+                <h2>COMPANY</h2>
+                <a href="#">Who we are</a>
+                <a href="#">Find Bliss Near You</a>
+                <a href="#">Bliss Spa</a>
+                <a href="#">Shop</a>
+            </div>
+            <!-- box 3 -->
+            <div class="footer-box">
+                <h2>CUSTOMER CARE</h2>
+                <a href="#">Gift Cards</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Ordering & Payment</a>
+                <a href="#">SMS Texts and Alerts</a>
+            </div>
+            <!-- box 4 -->
+            <div class="footer-box">
+                <h2>THE DRY STUFF</h2>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Sitemap</a>
+                <form action="">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" placeholder="Enter your email" id="email">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CopyRight -->
+    <div class="copyright">
+        <p>Copyright © by nghia_PS28127</p>
+    </div>
+    <!-- Link to js -->
+    <script src="../js/Main.js"></script>
+    <script>
+        Next();
+        setInterval(Next, 3000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<!-- Link to style -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/Dangky.css">
+<!-- Box icons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .copyright {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav">
+            <a href="./index.html" class="logo">bliss</a>
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- navbar -->
+            <ul class="navbar">
+                <li><a href="index.html" class="home-active">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#customers">Customers</a></li>
+            </ul>
+            <div class="user-cart">
+                <!-- User -->
+                <a href="./DangKy.html"><i class='bx bx-user' id="user-icon"></i></a>
+                <!-- Cart icon -->
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Đăng ký - đăng nhập -->
+    <div class="ccontainer">
+        <!-- Nút đăng nhập và đăng ký -->
+        <a href="#" id="dangky" class="dangky in_output" onclick="onDangKy()" onmouseover="mouseover()"
+            onmouseout="mouseout()">Đăng ký</a>
+        <a href="#" id="dangnhap" class="dangnhap in_output" onclick="onDangNhap()">Đăng nhập</a>
+
+        <!-- Form đăng ký -->
+        <div class="divDangKy" id="idDangKy">
+            <form action="DangKy.html" name="formDangKy" class="formBox" id="formBox">
+                <h1>đăng ký thành viên</h1> <br>
+                <hr>
+                <div class="space"></div>
+
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Tên đầy đủ</label>
+                    <input autofocus type="text" id="fullname" class="form-text" placeholder="VD: Hữu Nghĩa">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mail" class="form-label">Email</label>
+                    <input autofocus type="text" id="email" class="form-text" placeholder="VD: huunghia@gmail.com">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input autofocus type="password" id="password" class="form-text" placeholder="Nhập mật khẩu">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password-again" class="form-label">Nhập lại mật khẩu</label>
+                    <input autofocus type="text" id="password-again" class="form-text" placeholder="Nhập lại mật khẩu">
+                    <span class="form-message"></span>
+                </div>
+
+                <input type="submit" class="formDK" value="Đăng ký" id="nutDangKy" onclick="return kiemTraDangKy()">
+                <span class="formDK">Bạn đã có tài khoản ? Vui lòng click
+                    <a href="#" onclick="onDangNhap()" class="form-again">Đăng nhập</a></span>
+            </form>
+        </div>
+
+        <!-- Form đăng nhập -->
+        <div class="divDangNhap" id="idDangNhap">
+            <form action="" name="formDangNhap" class="formBox">
+                <h1>đăng nhập</h1> <br>
+                <hr>
+                <div class="space"></div>
+
+                <div class="form-group1">
+                    <label for="fullname" class="form-label">Tên đăng nhập</label>
+                    <input autofocus type="text" id="fullname" class="form-text" placeholder="VD: Huu Nghia"
+                        onkeyup="daoNut()">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group1">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input autofocus type="password" id="passwordes" class="form-text" placeholder="Nhập mật khẩu"
+                        onkeyup="daoNut()">
+                    <span class="form-message"></span>
+                    <i class='bx bx-low-vision' onclick="showtext()"></i>
+                </div>
+
+                <label><input type="checkbox" id="check" class="check"> Ghi nhớ lần sau</label>
+
+                <span><a href="#" onclick="onDangNhap()" id="forgotpass">Quên mật khẩu?</a></span>
+
+                <input type="submit" class="formDK" value="Đăng Nhập" id="nutDangNhap"
+                    onclick="return kiemTraDangNhap()">
+                <br>
+                <span class="formDK">Bạn chưa có tài khoản ? Vui lòng click
+                    <button onclick="onDangKy()" class="form-again" id="dangkyNode">Đăng ký</button></span>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-container">
+            <!-- box 1 -->
+            <div class="footer-box">
+                <img src="../Images/logo1.jpg" alt="">
+                <div class="social">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="footer-box">
+                <h2>COMPANY</h2>
+                <a href="#">Who we are</a>
+                <a href="#">Find Bliss Near You</a>
+                <a href="#">Bliss Spa</a>
+                <a href="#">Shop</a>
+            </div>
+            <!-- box 3 -->
+            <div class="footer-box">
+                <h2>CUSTOMER CARE</h2>
+                <a href="#">Gift Cards</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Ordering & Payment</a>
+                <a href="#">SMS Texts and Alerts</a>
+            </div>
+            <!-- box 4 -->
+            <div class="footer-box">
+                <h2>THE DRY STUFF</h2>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Sitemap</a>
+                <form action="">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" placeholder="Enter your email" id="email">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CopyRight -->
+    <div class="copyright">
+        <p>Copyright © by nghia_PS28127</p>
+    </div>
+
+    <!-- Link to js -->
+    <script src="../js/Dangky.js"></script>
+    <script>
+        validator({
+            form: '#formBox',
+            rules: [
+                validator.isRequired('#fullname'),
+                validator.isEmail('#email'),
+                validator.minlength('#password', 6)
+            ]
+        });
+    </script>
+</body>
+
+</html>

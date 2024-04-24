@@ -1,0 +1,161 @@
+:root {
+    --text-color: white;
+    --bag-color: rgba(81, 226, 189, 0.5);
+    --main-color: orange;
+}
+
+body {
+    background: url(../Images/backgroundBody1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ccontainer {
+    width: 600px;
+    min-height: 650px;
+    margin: 2rem auto;
+    background: var(--bag-color);
+}
+
+/* button Đăng nhập -đăng ký */
+.in_output {
+    display: inline-block;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.dangnhap {
+    background: rgb(170, 167, 167);
+}
+
+.dangky {
+    margin-left: 1rem;
+}
+
+.in_output:hover {
+    background: rgba(195, 196, 196, 0.9);
+}
+
+/* ------------------------- */
+/* Div đăng ký */
+.divDangNhap {
+    display: none;
+}
+
+.formBox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formBox h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.space {
+    margin: 3rem 0;
+}
+
+.form-group1 {
+    position: relative;
+    margin: 2rem 0;
+
+}
+
+.form-label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form-text {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.bx-low-vision {
+    position: absolute;
+    top: 2.8rem;
+    right: 1rem;
+    cursor: pointer;
+    color: black;
+}
+
+#nutDangKy,
+#nutDangNhap {
+    padding: 0.7rem 2rem;
+    margin-left: 70%;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.formDK {
+    margin-top: 1rem;
+    margin-left: 50px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+label {
+    cursor: pointer;
+}
+
+#nutDangKy,
+#nutDangNhap {
+    margin-left: 9rem;
+    border: none;
+    background: var(--main-color);
+}
+
+#nutDangKy:hover,
+#nutDangNhap:hover {
+    background: rgba(195, 196, 196, 0.9);
+    border: none;
+    cursor: pointer;
+}
+
+/* span a{
+    color: var(--text-color);
+    font-weight: 900;
+}
+span a:hover, #forgotpass:hover{
+    color: orange;
+}
+span{
+    margin-left: 7.7rem;
+} */
+
+/* Div đăng nhập */
+.check {
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#forgotpass {
+    margin-left: 2rem;
+    color: var(--text-color);
+    font-weight: 900;
+}
+
+.form-again {
+    margin: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.actives {
+    color: red;
+    /* border: 1px solid red; */
+}
